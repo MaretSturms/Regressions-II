@@ -138,8 +138,8 @@ str(ineqdata)
 Check first and last observations in the dataset
 
 ```{r eval=FALSE, include=FALSE}
-head(ineq)
-tail(ineq)
+head(ineqdata)
+tail(ineqdata)
 dim(SABE_Colombia)
 ```
 
@@ -315,7 +315,7 @@ We can visualise covariation between variables using a scatter plot, for example
 
 ```{r}
 
-ggplot(ineq, aes(x=ldl, y=totchol)) + 
+ggplot(ineqdata, aes(x=ldl, y=totchol)) + 
   geom_point() + 
   scale_x_log10() + 
   scale_y_log10() 
